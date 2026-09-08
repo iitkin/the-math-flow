@@ -218,22 +218,6 @@ export default function App() {
                 alt="Smiling child studying math at a desk"
                 className="w-full h-full object-cover"
               />
-              <div
-                className="absolute bottom-6 left-6 right-6 rounded-2xl px-5 py-4"
-                style={{ background: "rgba(255,255,255,0.92)", backdropFilter: "blur(8px)" }}
-              >
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">🌟</span>
-                  <div>
-                    <p className="font-semibold text-sm" style={{ color: "var(--color-ink)" }}>
-                      "I finally get fractions!"
-                    </p>
-                    <p className="text-xs" style={{ color: "var(--color-muted)" }}>
-                      — Emma, Grade 4 student
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

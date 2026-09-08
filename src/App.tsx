@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const NAV_LINKS = ["How It Works", "Curriculum", "Testimonials", "Pricing"];
+const NAV_LINKS = ["How It Works", "Curriculum", "Pricing"];
 
 const STATS = [
   { value: "500+", label: "students taught" },
@@ -41,29 +41,6 @@ const TOPICS = [
   { icon: "📊", label: "Word Problems", grades: "1–5" },
 ];
 
-const TESTIMONIALS = [
-  {
-    quote: "My daughter went from dreading math to asking to do extra problems. The Math Flow changed everything for us.",
-    name: "Rachel T.",
-    child: "Mom of Lily, Grade 3",
-    avatar: "RT",
-    color: "#1a7a6e",
-  },
-  {
-    quote: "Within two months, my son jumped from a C to an A. His confidence in class is night and day.",
-    name: "Marcus W.",
-    child: "Dad of Elijah, Grade 4",
-    avatar: "MW",
-    color: "#f5a623",
-  },
-  {
-    quote: "The tutors here genuinely care. They explain things in ways that click — even for kids who thought they weren't 'math people.'",
-    name: "Priya S.",
-    child: "Mom of Anya, Grade 2",
-    avatar: "PS",
-    color: "#7c6af5",
-  },
-];
 
 const PLANS = [
   {
@@ -389,59 +366,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section id="testimonials" className="px-6 md:px-12 py-24">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
-            <span
-              className="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded-full mb-4"
-              style={{ background: "var(--color-amber-light)", color: "var(--color-amber)" }}
-            >
-              Parent Stories
-            </span>
-            <h2
-              className="text-4xl md:text-5xl font-bold"
-              style={{ fontFamily: "var(--font-display)", color: "var(--color-ink)" }}
-            >
-              Families love
-              <br />
-              <em style={{ color: "var(--color-teal)", fontStyle: "italic" }}>The Math Flow.</em>
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t) => (
-              <div
-                key={t.name}
-                className="rounded-2xl p-7 border flex flex-col gap-5"
-                style={{ borderColor: "var(--color-border)" }}
-              >
-                <p
-                  className="text-base leading-relaxed flex-1"
-                  style={{ color: "var(--color-ink)", fontFamily: "var(--font-display)", fontStyle: "italic" }}
-                >
-                  "{t.quote}"
-                </p>
-                <div className="flex items-center gap-3">
-                  <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
-                    style={{ background: t.color }}
-                  >
-                    {t.avatar}
-                  </div>
-                  <div>
-                    <div className="font-semibold text-sm" style={{ color: "var(--color-ink)" }}>
-                      {t.name}
-                    </div>
-                    <div className="text-xs" style={{ color: "var(--color-muted)" }}>
-                      {t.child}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* PHOTO BREAK */}
       <div className="relative h-72 md:h-96 overflow-hidden">

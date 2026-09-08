@@ -1,0 +1,10 @@
+{
+  "description": "Provides a static, interactive math tutoring flow to guide students through concepts and problem-solving steps for effective learning.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

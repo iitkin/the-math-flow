@@ -1,8 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import path from 'node:path'
 
-// If you're deploying to GitHub Pages at https://<user>.github.io/the-math-flow/
+// Deploying to GitHub Pages at https://iitkin.github.io/the-math-flow/
 export default defineConfig({
   base: '/the-math-flow/',
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 })

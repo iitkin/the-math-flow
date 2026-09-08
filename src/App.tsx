@@ -5,7 +5,6 @@ const NAV_LINKS = ["How It Works", "Curriculum", "Pricing"];
 const STATS = [
   { value: "500+", label: "students taught" },
   { value: "97%", label: "grade improvement" },
-  { value: "4.9★", label: "parent rating" },
   { value: "6 yrs", label: "in business" },
 ];
 
